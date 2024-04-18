@@ -20,6 +20,10 @@ Route::middleware(['Admin_auth'])->group(function () {
 Route::delete('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/admin',[Admincontroller::class, 'Dashboard'])->name('admin.dashboard');
 Route::get('/register',[AuthController::class,'register'])->name('register');
+Route::get('/add', [AuthController::class,'add'])->name('add_admin');
+Route::delete('/register/{id}/delete', [AuthController::class,'destroy'])->name('admin.destroy');
+Route::post('/register/{id}/update', [AuthController::class,'update'])->name('admin.update');
+Route::get('/register/{id}/edit', [AuthController::class,'edit'])->name('admin.edit');
 Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
 Route::get('/price',[pricecontroller::class, 'index'])->name('price')->middleware('shortcode');
 Route::post('/price/update/{$id[]}', [pricecontroller::class, 'update'])->name('price.update');
