@@ -1,0 +1,12 @@
+body {
+    background: url('Espana_aquarium.gif');
+    background-color: navy;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+}
