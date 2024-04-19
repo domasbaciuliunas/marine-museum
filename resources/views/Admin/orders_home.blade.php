@@ -29,8 +29,8 @@
                         <td>{{$order->name}}</td>
                         <td>{{$order->surname}}</td>
                         <td>{{$order->city}}</td>
-                        <td>{{$order->ex_date}}</td>
-                        <td>{{$order->cc_number}}</td>
+                        <td>{{$order->date}}</td>
+                        <td>{{$order->bank}}</td>
                         <td>{{$order->child}}</td>
                         <td>{{$order->teen}}</td>
                         <td>{{$order->adult}}</td>

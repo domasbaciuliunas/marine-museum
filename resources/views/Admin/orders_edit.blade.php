@@ -42,11 +42,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="date" class="form-label">Kortelės galiojimo data:</label>
-                        <input type="text" class="form-control" id="date" placeholder="Užsakovo kortelės galiojimo data" value="{{$orders->ex_date}}" name="date">
+                        <input type="text" class="form-control" id="date" placeholder="Užsakovo kortelės galiojimo data" value="{{$orders->date}}" name="date">
                     </div>
                     <div class="mb-3">
                         <label for="bank" class="form-label">Kortelės numeris:</label>
-                        <input type="text" class="form-control" id="bank" placeholder="Užsakovo kortelės numeris" value="{{$orders->cc_number}}" name="bank">
+                        <input type="text" class="form-control" id="bank" placeholder="Užsakovo kortelės numeris" value="{{$orders->bank}}" name="bank">
                     </div>
                     <div class="mb-3">
                         <h5>Bilietai:</h5>

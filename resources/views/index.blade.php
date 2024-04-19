@@ -50,17 +50,17 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="card-body">
-                                <div class="card-header">[[TypeA]]</div>
+                                <div class="card-header">Vaikamas iki 5 metų</div>
                                 <div class="card-body">
                                     <ul class="list-unstyled text-small">
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Įėjimas nuo 8.00 iki 15.00</p>
                                         </li>
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Vykdomi užsiėmimai</p>
                                         </li>
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Sekmadieniais nemokamai</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -68,17 +68,17 @@
                         </div>
                         <div class="carousel-item">
                             <div class="card-body">
-                                <div class="card-header">[[Type B]]</div>
+                                <div class="card-header">Vaikams nuo 5 iki 16 metų</div>
                                 <div class="card-body">
                                     <ul class="list-unstyled text-small">
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Įėjimas nuo 8.00 iki 19.00</p>
                                         </li>
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Vykdomi užsiėmimai</p>
                                         </li>
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Pažintinės kelionės po muziejų</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -86,17 +86,17 @@
                         </div>
                         <div class="carousel-item">
                             <div class="card-body">
-                                <div class="card-header">[[Type C]]</div>
+                                <div class="card-header">Suaugusiems</div>
                                 <div class="card-body">
                                     <ul class="list-unstyled text-small">
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Įėjimas nuo 8.00 iki 19.00</p>
                                         </li>
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Šventinės nuolaidos</p>
                                         </li>
                                         <li>
-                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                            <p>Nuolaidos perkant grupinius bilietus</p>
                                         </li>
                                     </ul>
                                 </div>

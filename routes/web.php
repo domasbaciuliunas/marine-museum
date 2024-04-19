@@ -5,11 +5,10 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\indexcontroller;
 use App\Http\Controllers\Admincontroller;
 use App\Http\Controllers\TicketController;
-use App\Http\Controllers\pricecontroller;
 
 
 Route::middleware(['LOG_auth'])->group(function () {
-    Route::get('/', [indexcontroller::class, 'index'])->name('index')->middleware('shortcode');
+    Route::get('/', [indexcontroller::class, 'index'])->name('index');
     Route::get('/order', [indexcontroller::class, 'order'])->name('order');
     Route::get('/login', [AuthController::class, 'login'])->name('admin.login');
     Route::post('/login/auth', [AuthController::class, 'validate'])->name('login.auth');
@@ -25,6 +24,4 @@ Route::delete('/register/{id}/delete', [AuthController::class,'destroy'])->name(
 Route::post('/register/{id}/update', [AuthController::class,'update'])->name('admin.update');
 Route::get('/register/{id}/edit', [AuthController::class,'edit'])->name('admin.edit');
 Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
-Route::get('/price',[pricecontroller::class, 'index'])->name('price')->middleware('shortcode');
-Route::post('/price/update/{id}', [pricecontroller::class, 'update'])->name('price.update');
 });

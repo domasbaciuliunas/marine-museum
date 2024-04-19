@@ -13,8 +13,8 @@ class Ticket extends Model
         'name',
         'surname',
         'city',
-        'ex_date',
-        'cc_number',
+        'date',
+        'bank',
         'child',
         'teen',
         'adult'
