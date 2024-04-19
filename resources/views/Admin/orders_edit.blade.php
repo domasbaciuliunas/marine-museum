@@ -1,7 +1,16 @@
-@extends('layout.layout')
+@extends('layout.admin_layout')
 
 @section('content')
     <div class="container mt-3">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach( $errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <div class="card bg-dark text-white">
             <div class="card-header">
                 Redaguoti bilietų užsakymą

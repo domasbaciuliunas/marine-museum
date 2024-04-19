@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -29,7 +30,7 @@ class AuthController extends Controller
         }
         else
         {
-            echo "failure_choom";
+            return redirect('/login')->with('failure', 'Neteisingi duomenys');
         }
     }
 
@@ -51,8 +52,9 @@ class AuthController extends Controller
     {
         return view('auth.register');
     }
-    public function registerPost(Request $request)
+    public function registerPost(UserRequest $request)
     {
+        $request->validated();
         $user = new User();
 
         $user->name = $request->name;
@@ -70,7 +72,7 @@ class AuthController extends Controller
         return redirect('register');
     }
 
-    public function update(Request $request, $id)
+    public function update(UserRequest $request, $id)
     {
         $User=user::find($id);
         $User->password= Hash::make($User->password);

@@ -1,11 +1,20 @@
 @extends('layout.layout')
 @section('content')
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach( $errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 <form action="{{ route('admin_orders.store') }}" method="POST">
     @csrf
     <div class="card container mt-5 py-5 bg-dark text-white">
         <h5>Užsakyti bilietus</h5>
         <div class="mb-3 mt-3">
-            <label for="email" class="form-label">E-paštas:</label>
+            <label for="email" class="form-label">E.paštas:</label>
             <input type="email" class="form-control" id="email" name="email"
                    placeholder="Įveskite savo elektroninį paštą">
         </div>
@@ -29,7 +38,7 @@
         </div>
         <div class="mb-3">
             <label for="date" class="form-label">Kortelės galiojimo data:</label>
-            <input type="date" class="form-control" id="date" name="date">
+            <input type="text" class="form-control" id="date" placeholder="pvz.: 12-99" name="date">
         </div>
         <div class="mb-3">
             <label for="bank" class="form-label">Kortelės numeris:</label>

@@ -15,15 +15,9 @@ class pricecontroller extends Controller
         ]);
     }
 
-    public function update(Request $request, $replace)
+    public function update(Request $request, $id)
     {
-        foreach ($replace as $replacement)
-        {
-            $ShortCode=ShortCode::find($replacement->id);
-            $ShortCode->update($request->all());
-            $ShortCode->save();
-            return redirect()->route('admin_orders.index');
-        }
+
 
 
     }

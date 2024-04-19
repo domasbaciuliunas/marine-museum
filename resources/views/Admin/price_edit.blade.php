@@ -1,10 +1,10 @@
-@extends('layout.layout')
+@extends('layout.admin_layout')
 @section('content')
     @for($z=0; $z<3;$z++)
         <div class="modal" id='{{$z}}'>
             <div class="card bg-dark text-white">
                 <h5>Redaguoti kortelę</h5>
-                <form  action="{{ route("price.update", $z)}}">
+                <form  action="{{ route("price.update", ['id' => $z])}}" method="POST">
                     @csrf
                 <div class="card-body">
                     <span id="theValue"></span>

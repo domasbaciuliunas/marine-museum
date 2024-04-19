@@ -11,13 +11,16 @@
                         @csrf
                         <div class="mb-3 mt-3 ">
                             <label for="email" class="form-label ">elektroninis paštas:</label>
-                            <input type="text" class="form-control" name="email" id="email" placeholder="įveskite el.paštą">
+                            <input type="text" class="form-control" name="email" id="email" placeholder="įveskite el.paštą" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="password" class="form-label ">slaptažodis:</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="įveskite slaptažodį">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="įveskite slaptažodį" required>
                         </div>
+                        @if(Session::has('failure'))
+                            <p class="text-bg-danger">{{ Session::get('failure')}}</p>
+                        @endif
                         <div class="mb-3">
                             <button type="submit" class="btn btn-dark">Prisijungti</button>
                         </div>

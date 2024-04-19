@@ -26,5 +26,5 @@ Route::post('/register/{id}/update', [AuthController::class,'update'])->name('ad
 Route::get('/register/{id}/edit', [AuthController::class,'edit'])->name('admin.edit');
 Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
 Route::get('/price',[pricecontroller::class, 'index'])->name('price')->middleware('shortcode');
-Route::post('/price/update/{$id[]}', [pricecontroller::class, 'update'])->name('price.update');
+Route::post('/price/update/{id}', [pricecontroller::class, 'update'])->name('price.update');
 });
