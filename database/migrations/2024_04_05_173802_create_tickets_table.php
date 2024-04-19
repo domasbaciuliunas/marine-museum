@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('city');
-            $table->string('ex_date');
-            $table->string('cc_number');
+            $table->string('date');
+            $table->string('bank');
             $table->integer('child');
             $table->integer('teen');
             $table->integer('adult');

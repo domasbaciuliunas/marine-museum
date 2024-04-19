@@ -38,8 +38,8 @@ class TicketController extends Controller
         $ticket->name = $request->name;
         $ticket->surname= $request->surname;
         $ticket->city= $request->city;
-        $ticket->ex_date= $request->date;
-        $ticket->cc_number= $request->bank;
+        $ticket->date= $request->date;
+        $ticket->bank= $request->bank;
         $ticket->child= $request->child;
         $ticket->teen= $request->teen;
         $ticket->adult= $request->adult;
