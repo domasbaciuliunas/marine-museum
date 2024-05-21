@@ -27,7 +27,8 @@ class UserRequest extends FormRequest
             'email' =>'Paštas yra privalomas ir turi būti nuo 3 iki 254 raidžių ilgumo',
             'password.required' => 'Slaptažods yra privalomas',
             'password'=> 'slaptažodis gali būti nuo 5 iki 35 simbolių ilgumo',
-            'name.alpha' => 'Varde gali būti tik raidės'
+            'name.alpha' => 'Varde gali būti tik raidės',
+            'email.unique' =>'Šis paštas jau egzistuoja',
         ];
     }
 
@@ -35,7 +36,7 @@ class UserRequest extends FormRequest
     {
         return [
             'name'=>'required|min:3|max:35|alpha',
-            'email'=>'required|min:3|max:254',
+            'email'=>'required|min:3|max:254|unique:users',
             'password'=>'required|min:5|max:35'
         ];
     }
