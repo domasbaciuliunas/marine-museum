@@ -18,7 +18,7 @@
                 <form action="{{ route('register') }}" method="POST">
                     @csrf
                     <div class="card container mt-5 py-5 bg-dark text-white">
-                     <h1 class="card-title">Pridėti naują administartorių</h1>
+                     <h1 class="card-title">Pridėti naują administratorių</h1>
                         <div class="mb-3 mt-3">
                         <label for="name" class="form-label">Vardas:</label>
                         <input type="text" name="name" class="form-control" id="name" placeholder="Įveskite vardą">

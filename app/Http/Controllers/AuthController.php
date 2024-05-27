@@ -24,7 +24,6 @@ class AuthController extends Controller
             'email' =>$request->email,
             'password'=>$request->password
         ];
-        echo $credentials['password'];
         if (Auth::attempt($credentials)) {
             return redirect('/admin')->with('success', 'Login Success');
         }
